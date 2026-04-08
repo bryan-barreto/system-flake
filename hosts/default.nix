@@ -3,10 +3,10 @@
 {
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
   system.stateVersion = "25.11";
-  networking.hostName = "nixos"; # CHANGE ME
+  networking.hostName = "nixos";
 
   # user config
-  users.users.nixos = { # CHANGE ME
+  users.users.bryan = {
     isNormalUser = true;
     extraGroups = [ "wheel" "networkmanager" ];
     packages = with pkgs; [
